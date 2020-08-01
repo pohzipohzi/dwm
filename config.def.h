@@ -59,11 +59,11 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
-static const char *wmbrightnessupcmd[]  = { "wmbrightnessup", NULL };
-static const char *wmbrightnessdowncmd[]  = { "wmbrightnessdown", NULL };
-static const char *wmvolumeupcmd[]  = { "wmvolumeup", NULL };
-static const char *wmvolumedowncmd[]  = { "wmvolumedown", NULL };
-static const char *wmvolumetogglecmd[]  = { "wmvolumetoggle", NULL };
+static const char *wmbrightnessupcmd[]  = { "wmbrightness", "up", NULL };
+static const char *wmbrightnessdowncmd[]  = { "wmbrightness", "down", NULL };
+static const char *wmvolumeupcmd[]  = { "wmvolume", "up", NULL };
+static const char *wmvolumedowncmd[]  = { "wmvolume", "down", NULL };
+static const char *wmvolumetogglecmd[]  = { "wmvolume", "mute", NULL };
 static const char *wmlockcmd[]  = { "wmlock", NULL };
 
 static Key keys[] = {
