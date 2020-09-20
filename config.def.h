@@ -64,7 +64,7 @@ static const char *wmbrightnessdowncmd[]  = { "wmbrightness", "down", NULL };
 static const char *wmvolumeupcmd[]  = { "wmvolume", "up", NULL };
 static const char *wmvolumedowncmd[]  = { "wmvolume", "down", NULL };
 static const char *wmvolumetogglecmd[]  = { "wmvolume", "mute", NULL };
-static const char *wmlockcmd[]  = { "wmlock", NULL };
+static const char *wmlockcmd[]  = { "systemctl", "suspend", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
