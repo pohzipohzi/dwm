@@ -65,6 +65,7 @@ static const char *wmvolumeupcmd[]  = { "wmvolume", "up", NULL };
 static const char *wmvolumedowncmd[]  = { "wmvolume", "down", NULL };
 static const char *wmvolumetogglecmd[]  = { "wmvolume", "mute", NULL };
 static const char *wmlockcmd[]  = { "systemctl", "suspend", NULL };
+static const char *screenshotcmd[] = { "screenshot", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -74,6 +75,7 @@ static Key keys[] = {
 	{ SUPKEY,                       XK_y,      spawn,          {.v = wmvolumeupcmd } },
 	{ SUPKEY,                       XK_e,      spawn,          {.v = wmvolumetogglecmd } },
 	{ SUPKEY,                       XK_z,      spawn,          {.v = wmlockcmd } },
+	{ SUPKEY,                       XK_s,      spawn,          {.v = screenshotcmd } },
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
